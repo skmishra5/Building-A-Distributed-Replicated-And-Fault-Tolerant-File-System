@@ -29,11 +29,16 @@ Each chunk being stored to a file needs to have metadata associated with it. If 
 /user/bob/experiment/SimFile.data_chunk2. This is an example of the metadata being encoded in
 the name of the file. There will be other metadata associated with the chunk: this additional information
 should not be encoded in the filename; this includes –
+
   • Versioning Information: Multiple writes to the chunk will increment the version number
     associated with the chunk.
+    
   • Sequencing Information: There will be a sequence number associated with each chunk.
+  
   • File name: The file that the chunk is a part of
-  • Timestamp: The time that it was last updated. 
+  
+  • Timestamp: The time that it was last updated.
+  
 
 **Chunk Server and the Controller Node**
 
